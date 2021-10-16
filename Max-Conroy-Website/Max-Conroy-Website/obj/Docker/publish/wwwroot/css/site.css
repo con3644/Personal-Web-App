@@ -1,0 +1,303 @@
+html body {
+/* ----padding for navbar-----------*/
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    background-color: rgb(26, 26, 26);
+}
+
+/* ----rounded border----- 
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat; */
+
+.jumbotron {
+    background-color: rgb(35, 35, 35);
+    margin:1px;
+    padding: 10px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hlink {
+    color:rgb(255, 20, 147);
+}
+
+.carousel-header {
+    color: whitesmoke;
+}
+
+.carousel-header:hover {
+    color: rgb(161, 161, 161);
+    text-decoration-line: none;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+    wrap: false;
+}
+
+/* Container for content of contact page */
+.contact-container {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Verdana;
+    color:whitesmoke;
+}
+
+/* Container for content of about page */
+.about-container {
+    padding-top: 25px;
+    font-family: Verdana;
+    color: whitesmoke;
+}
+
+.aboutHeader {
+    padding-left: 50px;
+}
+
+.aboutPara {
+    padding-left: 100px;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+
+/* -----------------Elements that change per screen size are below ---------- */
+
+/* Navbar header */
+.header1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: Verdana;
+}
+
+/* Navbar subheaders */
+.navbar-header2 {
+    color: whitesmoke;
+    display: inline-block;
+    float: left;
+}
+    .navbar-header2:hover {
+        color: rgb(161, 161, 161);
+        text-decoration-line: none;
+    }
+
+/* Header above carousel, gets smaller with screen size  */
+.caroheader1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 45px;
+}
+
+/* scale carousel to 80% of viewport height (also done in index.cshtml via jquery, to be mobile friendly) */
+.carousel-inner {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/futuristic-large.jpg');
+}
+
+/* IMAGE GALLERY */
+div.gallery {
+    margin: 5px;
+    float: left;
+}
+/* wide gallery images*/
+div.gwide {
+    width: 400px;
+}
+/* tall gallery images*/
+div.gtall {
+    width: 200px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+/* youtube iframe, ensure height in carousel on large screen, smaller screens will be auto height*/
+div.gallery iframe {
+    width: 100%;
+    height: 220px;
+}
+
+div.gallery img:hover {
+    -webkit-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    border: ridge;
+    border-color: rgb(102, 102, 102);
+}
+/* gallery image descriptions */
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 0px;
+}
+
+/* carousel control labels */
+.leftControl {
+    color: white;
+    font-size: xx-large;
+}
+.rightControl {
+    color: white;
+    font-size: xx-large;
+}
+.mobileControlHeader {
+    display: none;
+    color: white;
+}
+
+.maxpic {
+    width:25%;
+    height:25%;
+}
+/* rearrange for smaller screens */
+@media screen and (max-width: 1200px) {
+
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+    /* wide gallery images*/
+    div.gwide {
+        width: 300px;
+    }
+    /* wide gallery images used near tall images */
+    div.gwide2 {
+        float: right;
+    }
+    /* tall gallery images*/
+    div.gtall {
+        width: 150px;
+        float: right;
+    }
+
+    div.gallery img:hover {
+        -webkit-transform: scale(2,2);
+        transform: scale(2,2);
+    }
+    .caroheader1 {
+        font-size: xx-large;
+        padding-top: 15px;
+    }
+    /* youtube video iframe auto height for small screens */
+    div.gallery iframe {
+        height: auto;
+    }
+    .leftControl {
+        font-size: large;
+    }
+    .rightControl {
+        font-size: large;
+    }
+}
+
+/* rearrange for smallest screens */
+@media screen and (max-width: 800px) {
+/* remove page padding*/
+    .body-content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .header1 {
+        font-size:xx-large;
+    }
+    .navbar-header2 {
+        font-size: medium;
+    }
+    /* elongate on mobile */
+    .carousel-inner {
+        height: 120vh;
+    }
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+    /* wide gallery images*/
+    div.gwide {
+        width: 200px;
+    }
+    /* tall gallery images*/
+    div.gtall {
+        width: 100px;
+    }
+    .caroheader1 {
+        font-size: x-large;
+        padding-top: 5px;
+    }
+    .leftControl {
+        display:none;
+    }
+    .rightControl {
+        display:none;
+    }
+    .mobileControlHeader {
+        display:inline;
+    }
+    .leftOuterControl {
+        width: 20vw;
+    }
+    .rightOuterControl {
+        width: 20vw;
+    }
+    .maxpic {
+        width:50%;
+        height:50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Custom Navbar */
+/*.navbar-custom {
+    background-color: #B3B3B3;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+    .navbar-custom .navbar-nav > li > a {
+        color: #fff;
+    }
+
+    .navbar-custom .navbar-nav > .active > a {
+        color: #ffffff;
+        background-color: transparent;
+    }
+
+        .navbar-custom .navbar-nav > li > a:hover,
+        .navbar-custom .navbar-nav > li > a:focus,
+        .navbar-custom .navbar-nav > .active > a:hover,
+        .navbar-custom .navbar-nav > .active > a:focus,
+        .navbar-custom .navbar-nav > .open > a {
+            text-decoration: none;
+            background-color: #707070;
+        }
+
+    .navbar-custom .navbar-brand {
+        color: #eeeeee;
+    }
+
+    .navbar-custom .navbar-toggle {
+        background-color: #eeeeee;
+    }
+
+    .navbar-custom .icon-bar {
+        background-color: #B3B3B3;
+    }*/

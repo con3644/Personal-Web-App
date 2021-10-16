@@ -1,0 +1,99 @@
+html body {
+/* ----padding for navbar-----------*/
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    background-color: rgb(26, 26, 26) !important;
+}
+
+.jumbotron {
+    background-color: rgb(35, 35, 35);
+    margin:1px;
+    padding: 10px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header above carousel*/
+.header1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.carousel-header {
+    color: whitesmoke;
+}
+.carousel-header:hover {
+    color: rgb(161, 161, 161);
+    text-decoration-line:none;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+    wrap: false;
+}
+
+/* Container for content of contact page */
+.contact-container {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Custom Navbar */
+/*.navbar-custom {
+    background-color: #B3B3B3;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+    .navbar-custom .navbar-nav > li > a {
+        color: #fff;
+    }
+
+    .navbar-custom .navbar-nav > .active > a {
+        color: #ffffff;
+        background-color: transparent;
+    }
+
+        .navbar-custom .navbar-nav > li > a:hover,
+        .navbar-custom .navbar-nav > li > a:focus,
+        .navbar-custom .navbar-nav > .active > a:hover,
+        .navbar-custom .navbar-nav > .active > a:focus,
+        .navbar-custom .navbar-nav > .open > a {
+            text-decoration: none;
+            background-color: #707070;
+        }
+
+    .navbar-custom .navbar-brand {
+        color: #eeeeee;
+    }
+
+    .navbar-custom .navbar-toggle {
+        background-color: #eeeeee;
+    }
+
+    .navbar-custom .icon-bar {
+        background-color: #B3B3B3;
+    }*/

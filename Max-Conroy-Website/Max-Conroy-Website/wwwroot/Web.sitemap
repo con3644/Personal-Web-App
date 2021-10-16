@@ -1,0 +1,9 @@
+﻿<siteMap>
+  <siteMapNode title="Home" description="Home" url="~/">
+    <siteMapNode title="About" description="Learn About Max Conroy"
+      url="~/About">
+      <siteMapNode title="Contact" description="Contact Max Conroy"
+        url="~/Contact" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
